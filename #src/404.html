@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Ошибка 404 - Телеком"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{})
+			<main class="page">
+				<section class="error">
+					<div class="_container">
+						<div class="breadcrumbs breadcrumbs--about">
+							<div class="breadcrumbs__content">
+								<ul class="breadcrumbs__list list-breadcrumbs">
+									<li class="list-breadcrumbs__item"><a href="">Главная</a></li>
+									<li class="list-breadcrumbs__item list-breadcrumbs__item--sep"><a href="">→</a></li>
+									<li class="list-breadcrumbs__item">Ошибка 404</li>
+								</ul>
+							</div>
+						</div>
+						<h1 class="error__title single-page-title__h1">Ошибка 404</h1>
+						<div class="error__content">
+							<div class="error__img">
+								<img src="img/error/404.png" alt="Ошибка 404">
+							</div>
+							<div class="error__text">Кажется, что-то пошло не так! 
+								Страница которую вы запрашиваете, не существует. 
+								Возможно она устарела, была удалена или был введен неправильный адрес в адресной строке.</div>
+							<a href="" class="error__link connect-btn">Перейти на главную</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

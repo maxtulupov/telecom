@@ -1,0 +1,350 @@
+//====================================================================================================
+.help {
+	padding: 0px 0px 100px 0px;
+	&__container {
+	}
+
+	&__title {
+		margin: 0px 0px 50px 0px;
+		@media (max-width:$md4+px){
+			margin: 0px 0px 25px 0px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		@media (max-width:$md0+px){
+			gap: 25px;
+		}
+		@media (max-width:1182px){
+			gap: 20px;
+		}
+		@media (max-width:$md4+px){
+			gap: 10px;
+		}
+	}
+
+	&__item {
+		flex: 0 1 48.7%;
+		@media (max-width:$md2+px){
+			flex: 0 1 100%;
+		}
+	}
+
+	&__btn {
+		margin: 40px 0px 0px 0px;
+	}
+
+	&__link {
+		font-size: 16px;
+		font-weight: 600;
+		width: 240px;
+		height: 53px;
+		@media (max-width:$md4+px){
+			width: 100%;
+			height: 48px;
+		}
+	}
+
+	&__text {
+		margin: 50px 0px 0px 0px;
+		font-size: 18px;
+		color: rgb(20, 20, 20);
+		line-height: 1.2;
+		font-weight: 500;
+		p {
+			&:not(:last-child) {
+				margin: 0px 0px 20px 0px;
+			}
+		}
+		b {
+			font-weight: bold;
+		}
+		a {
+			color: rgb(20, 20, 20);
+			@media (any-hover: hover){
+				&:hover {
+					color: rgb(68, 68, 68);
+				}
+			}
+		}
+		@media (max-width:$md4+px){
+			margin: 25px 0px 0px 0px;
+			font-size: 12px;
+			text-align: center;
+		}
+	}
+	@media (max-width:$md2+px){
+		padding: 0px 0px 60px 0px;
+	}
+	@media (max-width:$md4+px){
+		padding: 0px 0px 50px 0px;
+	}
+}
+
+.item-help {
+	border: 1px solid #dadada;
+	border-radius: 10px;
+	transition: box-shadow 0.3s ease 0s;
+	padding: 5px 5px 5px 0px;
+
+	&__content {
+		display: flex;
+		align-items: center;
+	}
+
+	&__img {
+		width: 190px;
+		height: 190px;
+		flex: 0 0 190px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			width: 100%;
+			max-width: 105px;
+		}
+		@media (max-width:$md4+px){
+			width: 110px;
+			height: 110px;
+			flex: 0 0 110px;
+			img {
+				max-width: 63px;
+			}
+		}
+	}
+
+	&__right {
+	}
+
+	&__title {
+		font-size: 27px;
+		color: rgb(25, 25, 25);
+		font-weight: bold;
+		margin: 0px 0px 10px 0px;
+		@media (max-width:$md4+px){
+			font-size: 18px;
+		}
+	}
+
+	&__text {
+		font-size: 16px;
+		color: rgb(25, 25, 25);
+		line-height: 1.2;
+		font-weight: 500;
+		max-width: 480px;
+		@media (max-width:$md4+px){
+			font-size: 11px;
+		}
+	}
+	@media (any-hover: hover){
+		&:hover {
+			box-shadow: 0px 1px 26.39px 2.61px rgba(194, 194, 194, 0.21);
+			border-color: transparent;
+		}
+	}
+}
+
+//====================================================================================================
+.help-open {
+	padding: 0px 0px 55px 0px;
+	&__title {
+		margin: 0px 0px 50px 0px;
+		@media (max-width:$md2+px){
+			margin: 0px 0px 25px 0px;
+		}
+	}
+
+	&__top {
+		margin: 0px 0px 30px 0px;
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		@media (max-width:$md2+px){
+			gap: 20px;
+		}
+		@media (max-width:$md4+px){
+			gap: 10px;
+		}
+	}
+
+	&__item {
+		flex: 0 1 47.8%;
+
+		.item-add-services__title {
+			padding: 0 20px 0 35px;
+			gap: 5px;
+			&::after {
+				width: 42px;
+				height: 42px;
+				font-size: 32px;
+				flex: 0 0 42px;
+				@media (max-width:$md4+px){
+					width: 25px;
+					height: 25px;
+					font-size: 22px;
+					flex: 0 0 25px;
+				}
+			}
+			@media (max-width:$md2+px){
+				gap: 20px;
+			}
+			@media (max-width:$md4+px){
+				gap: 10px;
+				font-size: 13px;
+				height: 45px;
+				padding: 3px 15px 3px 20px;
+			}
+		}
+		.elem-add-services {
+			padding: 25px 20px 25px 35px;
+			@media (max-width:$md4+px){
+				padding: 20px 15px 15px 20px;
+			}
+		}
+		.elem-add-services__title {
+			max-width: 400px;
+			@media (max-width:$md4+px){
+				font-size: 11px;
+			}
+		}
+		.elem-add-services__link {
+			@media (max-width:$md4+px){
+				margin: 15px 0px 0px 0px;
+				width: 121px;
+				height: 35px;
+				font-size: 13px;
+			}
+		}
+		@media (max-width:$md2+px){
+			flex: 0 1 100%;
+		}
+	}
+
+	&__btn {
+		margin: 40px 0px 0px 0px;
+		@media (max-width:$md4+px){
+			margin: 20px 0px 0px 0px;
+		}
+	}
+	@media (max-width:$md4+px){
+		padding: 0px 0px 50px 0px;
+	}
+}
+
+.top-help-open {
+	border-radius: 10px;
+	background-color: #f6f9fc;
+	padding: 30px 240px 30px 110px;
+	&__content {
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+
+	&__img {
+		width: 170px;
+		height: 50px;
+		flex: 0 0 170px;
+		margin: 0px 50px 0px 0px;
+		img {
+			width: 100%;
+			max-width: 175px;
+			position: absolute;
+			top: -65px;
+			left: 0;
+			@media (max-width:$md2+px){
+				position: static;
+			}
+		}
+		&.rotate-img {
+			img {
+				transform: rotate(342deg);
+			}
+		}
+		@media (max-width:$md1+px){
+			margin: 0;
+		}
+		@media (max-width:$md2+px){
+			height: auto;
+		}
+		@media (max-width:$md4+px){
+			width: 120px;
+			flex: 0 0 120px;
+		}
+	}
+
+	&__right {
+		display: flex;
+		align-items: center;
+		gap: 45px;
+		@media (max-width:$md1+px){
+			flex-wrap: wrap;
+			gap: 0;
+			margin: 0px 0px 0px 50px;
+		}
+		@media (max-width:$md2+px){
+			margin: 0px 0px 0px 30px;
+		}
+	}
+
+	&__title {
+		font-size: 30px;
+		color: rgb(25, 25, 25);
+		font-weight: bold;
+		line-height: 1.2;
+		flex: 0 0 270px;
+		@media (max-width:$md1+px){
+			flex: unset;
+		}
+		@media (max-width:$md2+px){
+			margin: 0px 0px 15px 0px;
+		}
+		@media (max-width:$md4+px){
+			margin: 0px 0px 10px 0px;
+			font-size: 18px;
+		}
+	}
+
+	&__text {
+		font-size: 16px;
+		color: rgb(25, 25, 25);
+		line-height: 1.2;
+		font-weight: 500;
+		max-width: 475px;
+		@media (max-width:$md4+px){
+			font-size: 11px;
+		}
+	}
+	@media (max-width:1312px){
+		padding: 30px 40px 30px 110px;
+	}
+	@media (max-width:$md2+px){
+		padding: 25px 30px 25px 30px;
+	}
+	@media (max-width:$md4+px){
+		padding: 8px 10px;
+	}
+}
+
+.btn-help {
+	display: flex;
+	justify-content: center;
+	&__link {
+		font-size: 16px;
+		font-weight: 600;
+		width: 240px;
+		height: 53px;
+		@media (max-width:$md4+px){
+			width: 100%;
+			height: 48px;
+		}
+	}
+}
+
+//====================================================================================================

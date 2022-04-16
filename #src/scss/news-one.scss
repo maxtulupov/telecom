@@ -1,0 +1,150 @@
+//====================================================================================================
+.one-news {
+	padding: 0px 0px 60px 0px;
+	&__container {
+	}
+
+	&__header {
+		margin: 0px 0px 47px 0px;
+		@media (max-width:$md2+px){
+			margin: 0px 0px 30px 0px;
+		}
+	}
+
+	&__title {
+	}
+
+	&__middle {
+		display: inline-block;
+	}
+
+	&__connect-btn {
+		width: 295px;
+		height: 66px;
+		font-size: 26px;
+		font-weight: 600;
+		@media (max-width:$md2+px){
+			height: 50px;
+			margin: 0 auto;
+		}
+		@media (max-width:$md4+px){
+			width: 100%;
+		}
+	}
+
+	&__thumbnail {
+		border-radius: 10px;
+		overflow: hidden;
+		width: 42.6%;
+		padding: 0px 30px 30px 0px;
+		float: left;
+		img {
+			width: 100%;
+			border-radius: 10px;
+			overflow: hidden;
+		}
+		@media (max-width:$md2+px){
+			width: 100%;
+			margin: 0px 0px 25px 0px;
+		}
+	}
+
+	&__date {
+		font-size: 16px;
+		color: rgb(25, 25, 25);
+		font-weight: 500;
+		margin: 0px 0px 35px 0px;
+		@media (max-width:$md2+px){
+			margin: 0px 0px 25px 0px;
+		}
+	}
+
+	&__entry-content {
+		h4 {
+			font-weight: bold;
+			font-size: 24px;
+			color: rgb(25, 25, 25);
+			margin: 0px 0px 25px 0px;
+			@media (max-width:$md4+px){
+				font-size: 20px;
+			}
+		}
+		p {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 1.2;
+			color: rgb(25, 25, 25);
+			margin: 0px 0px 25px 0px;
+			@media (max-width:$md4+px){
+				font-size: 16px;
+			}
+		}
+	}
+
+	&__navi {
+		margin: 35px 0px 0px 0px;
+	}
+	@media (max-width:$md2+px){
+		padding: 0px 0px 90px 0px;
+	}
+	@media (max-width:$md4+px){
+		padding: 0px 0px 45px 0px;
+	}
+}
+
+.navi-one-news {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	&__back {
+		border: 1px solid rgb(218, 218, 218);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 215px;
+		height: 48px;
+		font-size: 16px;
+		color: rgb(25, 25, 25);
+		font-weight: 600; 
+		border-radius: 24px;
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover){
+			&:hover {
+				background-color: rgb(218, 218, 218);
+			}
+		}
+		@media (max-width:$md4+px){
+			width: 100%;
+		}
+	}
+
+	&__next {
+		border: 1px solid rgb(218, 218, 218);
+		font-size: 16px;
+		color: rgb(25, 25, 25);
+		font-weight: 600;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 215px;
+		height: 48px;
+		border-radius: 24px;
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover){
+			&:hover {
+				background-color: rgb(218, 218, 218);
+			}
+		}
+		@media (max-width:$md4+px){
+			width: 100%;
+		}
+	}
+	@media (max-width:$md2+px){
+		justify-content: center;
+	}
+	@media (max-width:$md4+px){
+		flex-wrap: wrap;
+	}
+}
+
+//====================================================================================================
