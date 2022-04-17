@@ -12,7 +12,7 @@
 				<div class="form-input">
 					<input autocomplete="off" type="tel" name="form[]" data-value="Контактный номер телефона*" class="input _req _phone" />
 				</div>
-				<div class="form-input">
+				<div class="form-textarea">
 					<textarea name="" type="text" id="" cols="30" rows="10" data-value="Комментарий" class="textarea"></textarea>
 				</div>
 				<div class="form-button">
@@ -33,23 +33,23 @@
 			<div class="popup__title">Заявка на переезд</div>
 			<div class="popup__subtitle">Специалист свяжется с вами для уточнения
 				даты и времени подключения</div>
-			<form action="#" class="popup-form form">
-				<div class="form-input _successful">
-					<input autocomplete="off" type="text" name="form[]" placeholder="Ваше имя" class="input" />
+			<form action="#" class="popup-form form" data-message="thanks">
+				<div class="form-input">
+					<input autocomplete="off" type="text" name="form[]" data-value="Ваше имя" class="input _req" />
 				</div>
 				<div class="form-input">
-					<input autocomplete="off" type="text" name="form[]" placeholder="Контактный номер телефона*" class="input _req _phone" />
+					<input autocomplete="off" type="text" name="form[]" data-value="Контактный номер телефона*" class="input _req _phone" />
 				</div>
 				<div class="form__two-inputs">
-					<div class="form-input _successful">
-						<input autocomplete="off" type="text" name="form[]" placeholder="Откуда*" class="input" />
+					<div class="form-input">
+						<input autocomplete="off" type="text" name="form[]" data-value="Откуда*" class="input" />
 					</div>
 					<div class="form-input">
-						<input autocomplete="off" type="text" name="form[]" placeholder="Куда*" class="input" />
+						<input autocomplete="off" type="text" name="form[]" data-value="Куда*" class="input" />
 					</div>
 				</div>
-				<div class="form-input">
-					<textarea name="" id="" cols="30" rows="10" placeholder="Комментарий" class="textarea"></textarea>
+				<div class="form-textarea">
+					<textarea name="" id="" cols="30" rows="10" data-value="Комментарий" class="textarea"></textarea>
 				</div>
 				<div class="form-button">
 					<button type="submit" class="form__btn btn connect-btn">Подключить</button>
@@ -89,12 +89,12 @@
 					<div class="popup__title">Оставить заявку</div>
 					<div class="popup__subtitle">Специалист свяжется с вами для уточнения
 						даты и времени подключения</div>
-					<form action="#" class="popup-form form">
-						<div class="form-input _successful">
-							<input autocomplete="off" type="text" name="form[]" placeholder="Ваше имя" class="input" />
+					<form action="#" class="popup-form form" data-message="thanks">
+						<div class="form-input">
+							<input autocomplete="off" type="text" name="form[]" data-value="Ваше имя" class="input _req" />
 						</div>
 						<div class="form-input">
-							<input autocomplete="off" type="text" name="form[]" placeholder="Контактный номер телефона*" class="input _req _phone" />
+							<input autocomplete="off" type="text" name="form[]" data-value="Контактный номер телефона*" class="input _req _phone" />
 						</div>
 						<div class="form-button">
 							<button type="submit" class="form__btn btn connect-btn">Подключить</button>
@@ -142,11 +142,11 @@
 				<div class="popup__right right-popup">
 					<div class="popup__title">Роутер Mercusys MW305R</div>
 					<div class="popup__subtitle right-popup__text">Подайте заявку на покупку или аренду</div>
-					<form action="#" class="popup-form form">
+					<form action="#" class="popup-form form" data-message="thanks">
 						<div class="form__choose choose-form">
 							<div class="choose-form__radio radio-choose-form">
-								<input type="radio" name="price" id="price-1" value="80 руб./мес" class="label-choose-form__input" checked>
-								<label for="price-1" class="radio-choose-form__label label-choose-form">
+								<input type="radio" name="price333" id="price-13333" value="80 руб./мес" class="label-choose-form__input" checked>
+								<label for="price-13333" class="radio-choose-form__label label-choose-form">
 									<div class="label-choose-form__text">
 										<div class="label-choose-form__title">аренда:</div>
 										<div class="label-choose-form__price">80 руб./мес</div>
@@ -154,8 +154,8 @@
 								</label>
 							</div>
 							<div class="choose-form__radio radio-choose-form">
-								<input type="radio" name="price" id="price-2" value="1650 руб./мес" class="label-choose-form__input">
-								<label for="price-2" class="radio-choose-form__label label-choose-form">
+								<input type="radio" name="price333" id="price-23333" value="1650 руб./мес" class="label-choose-form__input">
+								<label for="price-23333" class="radio-choose-form__label label-choose-form">
 									<div class="label-choose-form__text">
 										<div class="label-choose-form__title">покупка:</div>
 										<div class="label-choose-form__price">1650 руб./мес</div>
@@ -163,14 +163,14 @@
 								</label>
 							</div>
 						</div>
-						<div class="form-input _successful">
-							<input autocomplete="off" type="text" name="form[]" placeholder="Ваше имя" class="input" />
+						<div class="form-input">
+							<input autocomplete="off" type="text" name="form[]" data-value="Ваше имя" class="input _req" />
 						</div>
 						<div class="form-input">
-							<input autocomplete="off" type="text" name="form[]" placeholder="Контактный номер телефона*" class="input _req _phone" />
+							<input autocomplete="off" type="tel" name="form[]" data-value="Контактный номер телефона*" class="input _req _phone" />
 						</div>
 						<div class="form-input">
-							<input autocomplete="off" type="text" name="form[]" placeholder="Ваш адрес электронной почты*" class="input _req _email" />
+							<input autocomplete="off" type="email" name="form[]" data-value="Ваш адрес электронной почты*" class="input _req _email" />
 						</div>
 						<div class="form-button">
 							<button type="submit" class="form__btn btn connect-btn">Заказать</button>
@@ -214,12 +214,12 @@
 				<div class="popup__title">Оставить заявку</div>
 				<div class="popup__subtitle">Специалист свяжется с вами для уточнения
 					даты и времени подключения</div>
-				<form action="#" class="popup-form form">
-					<div class="form-input _successful">
-						<input autocomplete="off" type="text" name="form[]" placeholder="Ваше имя" class="input" />
+				<form action="#" class="popup-form form" data-message="thanks">
+					<div class="form-input">
+						<input autocomplete="off" type="text" name="form[]" data-value="Ваше имя" class="input _req" />
 					</div>
 					<div class="form-input">
-						<input autocomplete="off" type="text" name="form[]" placeholder="Контактный номер телефона*" class="input _req _phone" />
+						<input autocomplete="off" type="text" name="form[]" data-value="Контактный номер телефона*" class="input _req _phone" />
 					</div>
 					<div class="form-button">
 						<button type="submit" class="form__btn btn connect-btn">Подключить</button>

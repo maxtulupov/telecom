@@ -1185,6 +1185,21 @@ body.ie ._ibg img {
   border-width: 1px;
 }
 
+.popup .form-textarea {
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.popup .form-textarea:not(:last-child) {
+  margin: 0px 0px 14px 0px;
+}
+
+.popup .form-textarea._error {
+  border-color: red;
+  border-width: 1px;
+}
+
 .popup .input {
   font-size: 18px;
   font-weight: 500;
@@ -9632,6 +9647,10 @@ body.ie ._ibg img {
 
   .popup .form-input._focus::after {
     right: 15px;
+  }
+
+  .popup .form-textarea:not(:last-child) {
+    margin: 0px 0px 10px 0px;
   }
 
   .popup .input {

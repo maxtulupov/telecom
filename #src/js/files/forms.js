@@ -13,7 +13,11 @@ function form_submit(e) {
 	let error = form_validate(form);
 	if (error == 0) {
 		//SendForm
-		form_clean(form);
+		// const tetsInputs = form.querySelectorAll('input,textarea');
+		// tetsInputs.forEach(element => {
+		// 	console.log(element.value);
+		// });
+		// form_clean(form);
 		if (message) {
 			popup_open('message-' + message);
 			e.preventDefault();

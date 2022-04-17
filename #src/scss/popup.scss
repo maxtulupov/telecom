@@ -198,6 +198,21 @@
 			border-width: 1px;
 		}
 	}
+	.form-textarea {
+		border: 1px solid #dadada;
+		border-radius: 10px;
+		overflow: hidden;
+		&:not(:last-child) {
+			margin: 0px 0px 14px 0px;
+			@media (max-width:$md4+px){
+				margin: 0px 0px 10px 0px;
+			}
+		}
+		&._error {
+			border-color: red;
+			border-width: 1px;
+		}
+	}
 	.input {
 		font-size: 18px;
 		font-weight: 500;
