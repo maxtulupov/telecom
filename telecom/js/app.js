@@ -1689,9 +1689,13 @@ if (allSwitchInput) {
 		elem.addEventListener('change', event => {
 			if (dataA && dataB) {
 				if (thisUrl !== dataB) {
-					document.location.href = dataB;
+					setTimeout(() => {
+						document.location.href = dataB;
+					}, 350);
 				} else {
-					document.location.href = dataA;
+					setTimeout(() => {
+						document.location.href = dataA;
+					}, 350);
 				}	
 			}
 		});
