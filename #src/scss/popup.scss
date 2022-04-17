@@ -196,6 +196,9 @@
 		&._error {
 			border-color: red;
 			border-width: 1px;
+			&::after {
+				content: none;
+			}
 		}
 	}
 	.form-textarea {
@@ -211,6 +214,9 @@
 		&._error {
 			border-color: red;
 			border-width: 1px;
+			&::after {
+				content: none;
+			}
 		}
 	}
 	.input {

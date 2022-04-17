@@ -1185,6 +1185,10 @@ body.ie ._ibg img {
   border-width: 1px;
 }
 
+.popup .form-input._error::after {
+  content: none;
+}
+
 .popup .form-textarea {
   border: 1px solid #dadada;
   border-radius: 10px;
@@ -1198,6 +1202,10 @@ body.ie ._ibg img {
 .popup .form-textarea._error {
   border-color: red;
   border-width: 1px;
+}
+
+.popup .form-textarea._error::after {
+  content: none;
 }
 
 .popup .input {
@@ -2847,28 +2855,32 @@ body.ie ._ibg img {
   color: rgba(25, 25, 25, 0.6);
 }
 
-.form-footer-input._error {
-  border-color: red;
-  border-width: 2px;
-}
-
-.form-footer-input._successful {
-  border-color: #690;
-  border-width: 2px;
+.form-footer-input._focus {
+  border-color: #669900;
+  border-width: 1px;
   position: relative;
 }
 
-.form-footer-input._successful::after {
+.form-footer-input._focus::after {
   content: "";
   background: url("../img/icons/successful.png") 0 0 no-repeat;
   width: 25px;
   height: 18px;
   position: absolute;
-  right: 10px;
+  right: 28px;
   top: 50%;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
+}
+
+.form-footer-input._error {
+  border-color: red;
+  border-width: 1px;
+}
+
+.form-footer-input._error::after {
+  content: none;
 }
 
 .bottom-footer__phones {
@@ -9840,6 +9852,10 @@ body.ie ._ibg img {
     font-size: 14px;
   }
 
+  .form-footer-input._focus::after {
+    right: 15px;
+  }
+
   .phones-bottom-footer__link {
     font-size: 16px;
   }
@@ -11216,7 +11232,7 @@ body.ie ._ibg img {
 .body-bottom-header__close{background:url("../img/icons/close3.svg") 0 0/cover no-repeat}
 .body-bottom-header__phones .phones-header__block .select__title .select__value:before{background:url("../img/icons/select_grad_png.webp") center/100% no-repeat}
 .body-bottom-header .link-phones-header__top::after{background:url("../img/icons/select_grad_png.webp") center/100% no-repeat}
-.form-footer-input._successful::after{background:url("../img/icons/successful.webp") 0 0 no-repeat}
+.form-footer-input._focus::after{background:url("../img/icons/successful.webp") 0 0 no-repeat}
 .controlls-main-slider__prev{background:url("../img/icons/next.svg") 0 0 no-repeat}
 .controlls-main-slider__next{background:url("../img/icons/next.svg") 0 0 no-repeat}
 .item-promo__text-img{background:url("../img/promo/wooman.webp") 0 100%/contain no-repeat #f6f9fc}

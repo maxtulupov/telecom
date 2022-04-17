@@ -261,23 +261,29 @@
 			color: rgba(25, 25, 25, 0.6);
 		}
 	}
-	&._error {
-		border-color: red;
-		border-width: 2px;
-	}
-	&._successful {
-		border-color: #690;
-		border-width: 2px;
+	&._focus{
+		border-color: #669900;
+		border-width: 1px;
 		position: relative;
 		&::after {
-			content: "";
+			content: '';
 			background: url('../img/icons/successful.png') 0 0 no-repeat;
 			width: 25px;
 			height: 18px;
 			position: absolute;
-			right: 10px;
+			right: 28px;
 			top: 50%;
-			transform: translate(0,-50%);
+			transform: translate(0, -50%);
+			@media (max-width:$md4+px){
+				right: 15px;
+			}
+		}
+	}
+	&._error {
+		border-color: red;
+		border-width: 1px;
+		&::after {
+			content: none;
 		}
 	}
 	@media (max-width:$md2+px){
