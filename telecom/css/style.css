@@ -1161,6 +1161,25 @@ body.ie ._ibg img {
           transform: translate(0, -50%);
 }
 
+.popup .form-input._focus {
+  border-color: #669900;
+  border-width: 1px;
+  position: relative;
+}
+
+.popup .form-input._focus::after {
+  content: "";
+  background: url("../img/icons/successful.png") 0 0 no-repeat;
+  width: 25px;
+  height: 18px;
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
 .popup .form-input._error {
   border-color: red;
   border-width: 1px;
@@ -1171,7 +1190,7 @@ body.ie ._ibg img {
   font-weight: 500;
   height: 66px;
   padding: 0px 65px 0px 25px;
-  color: #191919;
+  color: rgba(25, 25, 25, 0.6);
 }
 
 .popup .input::-webkit-input-placeholder {
@@ -1194,9 +1213,13 @@ body.ie ._ibg img {
   color: rgba(25, 25, 25, 0.6);
 }
 
+.popup .input._focus {
+  color: #191919;
+}
+
 .popup .textarea {
   font-size: 18px;
-  color: #191919;
+  color: rgba(25, 25, 25, 0.6);
   font-weight: 500;
   height: 144px;
   width: 100%;
@@ -1221,6 +1244,10 @@ body.ie ._ibg img {
 
 .popup .textarea::placeholder {
   color: rgba(25, 25, 25, 0.6);
+}
+
+.popup .textarea._focus {
+  color: #191919;
 }
 
 .popup .form-button {
@@ -1564,6 +1591,12 @@ body.ie ._ibg img {
 
 .popup_about .form__btn {
   width: 100%;
+}
+
+.popup_message-thanks .popup__body {
+  max-width: 800px;
+  height: 600px;
+  background: url("../img/icons/checkmark_1.gif") 50% 50%/cover no-repeat;
 }
 
 .header {
@@ -8317,6 +8350,11 @@ body.ie ._ibg img {
     padding: 70px 10px 30px 10px;
   }
 
+  .popup_message-thanks .popup__body {
+    padding: 30px;
+    height: 500px;
+  }
+
   .header__top {
     display: none;
   }
@@ -9592,6 +9630,10 @@ body.ie ._ibg img {
     right: 15px;
   }
 
+  .popup .form-input._focus::after {
+    right: 15px;
+  }
+
   .popup .input {
     font-size: 16px;
     height: 48px;
@@ -9689,6 +9731,11 @@ body.ie ._ibg img {
     display: block;
     font-size: 14px;
     line-height: 1.2;
+  }
+
+  .popup_message-thanks .popup__body {
+    padding: 20px 15px;
+    height: 400px;
   }
 
   .menu__body {
@@ -11136,8 +11183,10 @@ body.ie ._ibg img {
 #map{background:url("../img/icons/loading.gif") center/50px no-repeat}
 .popup__close{background:url("../img/icons/close3.svg") 0 0/cover no-repeat}
 .popup .form-input._successful::after{background:url("../img/icons/successful.webp") 0 0 no-repeat}
+.popup .form-input._focus::after{background:url("../img/icons/successful.webp") 0 0 no-repeat}
 .left-popup__download::before{background:url("../img/icons/pdf-download.webp") 0 0 no-repeat}
 .label-choose-form::before{background:url("../img/icons/check__wh.svg") 50% 0 no-repeat}
+.popup_message-thanks .popup__body{background:url("../img/icons/checkmark_1.gif") 50% 50%/cover no-repeat}
 .phones-header__select .select__title::before{background:url("../img/icons/dots.webp") 0 0 no-repeat}
 .link-phones-header__top::before{background:url("../img/icons/dots.webp") 0 0 no-repeat}
 .link-phones-header__top:after{background:url("../img/icons/select.webp") center/100% no-repeat}

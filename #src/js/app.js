@@ -1,4 +1,5 @@
 @@include('libs/swiper.min.js', {})
+@@include('libs/inputmask.min.js', {})
 @@include('files/sliders.js', {})
 @@include('files/forms.js', {})
 @@include('files/dynamic_adapt.js', {})

@@ -5,15 +5,15 @@
 			<div class="popup__title">Заявка на подключение</div>
 			<div class="popup__subtitle">Специалист свяжется с вами для уточнения
 				даты и времени подключения</div>
-			<form action="#" class="popup-form form">
+			<form action="#" class="popup-form form" data-message="thanks">
 				<div class="form-input">
-					<input autocomplete="off" type="text" name="form[]" placeholder="Ваше имя" class="input" />
+					<input autocomplete="off" type="text" name="form[]" data-value="Ваше имя" class="input _req" />
 				</div>
 				<div class="form-input">
-					<input autocomplete="off" type="tel" name="form[]" placeholder="Контактный номер телефона*" class="input _req _phone" />
+					<input autocomplete="off" type="tel" name="form[]" data-value="Контактный номер телефона*" class="input _req _phone" />
 				</div>
 				<div class="form-input">
-					<textarea name="" type="text" id="" cols="30" rows="10" placeholder="Комментарий" class="textarea"></textarea>
+					<textarea name="" type="text" id="" cols="30" rows="10" data-value="Комментарий" class="textarea"></textarea>
 				</div>
 				<div class="form-button">
 					<button type="submit" class="form__btn btn connect-btn">Подключить</button>
@@ -250,6 +250,13 @@
 				<p>Нажимая кнопку «Подключить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года No152-ФЗ
 					«О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных</p>
 			</div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_message-thanks">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
 		</div>
 	</div>
 </div>
