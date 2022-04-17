@@ -1123,6 +1123,9 @@
 		&::placeholder {
 			color: rgba(25, 25, 25, 0.6);
 		}
+		&:focus {
+			color: rgb(25, 25, 25);
+		}
 	}
 	&._error {
 		border-color: red;

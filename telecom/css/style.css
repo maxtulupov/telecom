@@ -1236,6 +1236,10 @@ body.ie ._ibg img {
   color: rgba(25, 25, 25, 0.6);
 }
 
+.popup .input:focus {
+  color: #191919;
+}
+
 .popup .input._focus {
   color: #191919;
 }
@@ -1267,6 +1271,10 @@ body.ie ._ibg img {
 
 .popup .textarea::placeholder {
   color: rgba(25, 25, 25, 0.6);
+}
+
+.popup .textarea:focus {
+  color: #191919;
 }
 
 .popup .textarea._focus {
@@ -4136,6 +4144,10 @@ body.ie ._ibg img {
 
 .form-contact-us-input input::placeholder {
   color: rgba(25, 25, 25, 0.6);
+}
+
+.form-contact-us-input input:focus {
+  color: #191919;
 }
 
 .form-contact-us-input._error {
