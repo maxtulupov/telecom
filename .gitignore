@@ -1,2 +1,5 @@
 /node_modules/
+/gulpfile.js 
+/package.json
+/package-package-lock.json
 *.mp4
