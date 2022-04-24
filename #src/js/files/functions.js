@@ -45,7 +45,22 @@ if (document.querySelector('.wrapper')) {
 }
 
 let unlock = true;
+//=================
+//UpdateInputsForms
+const updateForms = () => {
+	forms = document.querySelectorAll('form');
+	btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 
+	if (forms.length > 0) {
+		for (let index = 0; index < forms.length; index++) {
+			const el = forms[index];
+			el.addEventListener('submit', form_submit);
+		}
+	}
+
+	inputs = document.querySelectorAll('input[data-value],textarea[data-value]');
+	inputs_init(inputs);
+};
 //=================
 //ActionsOnHash
 if (location.hash) {
@@ -310,6 +325,7 @@ function digi_animate_value(el, start, end, duration) {
 
 	el.classList.add('_done');
 }
+
 //=================
 //Popups
 let popup_link = document.querySelectorAll('._popup-link');
@@ -335,6 +351,7 @@ for (let index = 0; index < popups.length; index++) {
 }
 function popup_open(item, video = '') {
 	let activePopup = document.querySelectorAll('.popup._active');
+	updateForms();
 	if (activePopup.length > 0) {
 		popup_close('', false);
 	}

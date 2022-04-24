@@ -1,11 +1,13 @@
-let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');
+let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
+
 if (forms.length > 0) {
 	for (let index = 0; index < forms.length; index++) {
 		const el = forms[index];
 		el.addEventListener('submit', form_submit);
 	}
 }
+
 function form_submit(e) {
 	let btn = event.target;
 	let form = btn.closest('form');
