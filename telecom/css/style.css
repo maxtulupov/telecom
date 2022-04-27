@@ -4949,7 +4949,7 @@ body.ie ._ibg img {
 }
 
 .add-text {
-  padding: 0px 0px 45px 0px;
+  padding: 20px 0px 45px 0px;
 }
 
 .add-text__title {
@@ -7712,6 +7712,14 @@ body.ie ._ibg img {
     min-height: 800px;
   }
 
+  .welcome--tv .welcome__title {
+    max-width: 580px;
+  }
+
+  .welcome--tv .welcome__subtitle {
+    max-width: 580px;
+  }
+
   .welcome--business .welcome__content {
     padding: 265px 15px 0 15px;
   }
@@ -7721,7 +7729,9 @@ body.ie ._ibg img {
   }
 
   .video-welcome {
-    right: -7%;
+    right: -0.5%;
+    width: 555px;
+    top: 240px;
   }
 
   .item-sales__img img {
@@ -8084,8 +8094,17 @@ body.ie ._ibg img {
     overflow: hidden;
   }
 
+  .welcome--tv .welcome__title {
+    max-width: 475px;
+  }
+
+  .welcome--tv .welcome__subtitle {
+    max-width: 475px;
+  }
+
   .video-welcome {
-    right: -19%;
+    right: -11%;
+    top: 243px;
   }
 
   .sales__item {
@@ -8881,6 +8900,8 @@ body.ie ._ibg img {
     width: 100%;
     right: 0;
     padding: 0 20px;
+    height: auto;
+    top: 264px;
   }
 
   .sales__top {
@@ -9417,6 +9438,10 @@ body.ie ._ibg img {
     background: url("../img/error/bg-error_tablet_2.png") 84% 0 no-repeat #000;
     margin: -93px 0px 0px 0px;
     padding: 93px 0px 90px 0px;
+  }
+
+  .tarrifs-page__title:not(:first-child) {
+    margin: 30px 0px 40px 0px;
   }
 
   .tarrifs-page__title {
@@ -10831,6 +10856,10 @@ body.ie ._ibg img {
   .error {
     background: url("../img/error/bg-error_tablet_2.png") 84% 0 no-repeat #000;
     padding: 93px 0px 50px 0px;
+  }
+
+  .tarrifs-page__title:not(:first-child) {
+    margin: 40px 0px 40px 0px;
   }
 
   .tarrifs-page__title {
