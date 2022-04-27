@@ -297,6 +297,9 @@
 		box-shadow: 0 5px 120px rgba(131, 45, 255, 0.4);
 		cursor: pointer;
 	}
+	.video-welcome__video[src=""] {
+		box-shadow: none;
+	}
 	@media (max-width:$md0+px){
 		right: -7%;
 	}
