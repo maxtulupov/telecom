@@ -980,7 +980,7 @@ for (let index = 0; index < popups.length; index++) {
 }
 function popup_open(item, video = '') {
 	let activePopup = document.querySelectorAll('.popup._active');
-	updateForms();
+	// updateForms();
 	if (activePopup.length > 0) {
 		popup_close('', false);
 	}
