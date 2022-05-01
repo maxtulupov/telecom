@@ -744,6 +744,7 @@
 					position: absolute;
 					bottom: 0;
 					left: 35px;
+					z-index: 3;
 					transition: height 0.3s ease 0s;
 				}
 				.menu-bottom-header__link {
@@ -781,6 +782,12 @@
 			}
 			@media (max-width:$md0+px){
 				line-height: 65px;
+				&:last-child {
+					.sub-menu {
+						left: unset;
+						right: -10px;
+					}
+				}
 			}
 		}
 		@media (max-width:$md0+px){

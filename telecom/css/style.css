@@ -2325,6 +2325,7 @@ body.ie ._ibg img {
   position: absolute;
   bottom: 0;
   left: 35px;
+  z-index: 3;
   -webkit-transition: height 0.3s ease 0s;
   -o-transition: height 0.3s ease 0s;
   transition: height 0.3s ease 0s;
@@ -7645,6 +7646,11 @@ body.ie ._ibg img {
 
   .menu-bottom-header__list li {
     line-height: 65px;
+  }
+
+  .menu-bottom-header__list li:last-child .sub-menu {
+    left: unset;
+    right: -10px;
   }
 
   .menu-bottom-header__list {
