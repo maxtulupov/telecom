@@ -233,34 +233,35 @@ if (menuItemHasChildrens) {
 
 //Popup TV channels
 const showTvOnPopup = () => {
-	const popupTvContent = document.querySelector('.popup__tv-content');
-	const allBlocksTvContent = popupTvContent.querySelectorAll('.content-tv__item');
-
-
-	popupTvContent.addEventListener('click', e => {
-		const target = e.target;
-
-
-		const showList = block => {
-			block ? block.classList.toggle('_active') : null;
-		};
-
-		const hideAllBlocks = () => {
-			allBlocksTvContent.forEach(elem => {
-				elem.classList.contains('_active') ? elem.classList.remove('_active') : null;
-			});
-		};
-
-
-		if (target.closest('.item-content-tv__title')) {
-			const thisBlock = target.closest('.content-tv__item');
-			if (thisBlock.classList.contains('_active')) {
-				showList(thisBlock);
-			} else {
-				hideAllBlocks();
-				showList(thisBlock);
+	if (document.querySelector('.popup__tv-content')) {
+		const popupTvContent = document.querySelector('.popup__tv-content');
+		const allBlocksTvContent = popupTvContent.querySelectorAll('.content-tv__item');
+		
+		popupTvContent.addEventListener('click', e => {
+			const target = e.target;
+	
+	
+			const showList = block => {
+				block ? block.classList.toggle('_active') : null;
+			};
+	
+			const hideAllBlocks = () => {
+				allBlocksTvContent.forEach(elem => {
+					elem.classList.contains('_active') ? elem.classList.remove('_active') : null;
+				});
+			};
+	
+	
+			if (target.closest('.item-content-tv__title')) {
+				const thisBlock = target.closest('.content-tv__item');
+				if (thisBlock.classList.contains('_active')) {
+					showList(thisBlock);
+				} else {
+					hideAllBlocks();
+					showList(thisBlock);
+				}
 			}
-		}
-	});
+		});
+	}
 };
 showTvOnPopup();
