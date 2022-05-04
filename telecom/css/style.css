@@ -7762,6 +7762,10 @@ body.ie ._ibg img {
     height: 65px;
   }
 
+  .header._header-hide._header-scroll .menu-bottom-header__list li {
+    line-height: 65;
+  }
+
   .header {
     height: 185px;
   }
@@ -7784,10 +7788,6 @@ body.ie ._ibg img {
 
   .phones-header__block:first-child {
     display: none;
-  }
-
-  .menu-bottom-header__list li {
-    line-height: 65px;
   }
 
   .menu-bottom-header__list li:last-child .sub-menu {

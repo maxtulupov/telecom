@@ -59,6 +59,9 @@
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 		@media (max-width:$md0+px){
 			height: 65px;
+			.menu-bottom-header__list li {
+				line-height: 65;
+			}
 		}
 	}
 	&._header-hide._header-show {
@@ -781,7 +784,6 @@
 				}
 			}
 			@media (max-width:$md0+px){
-				line-height: 65px;
 				&:last-child {
 					.sub-menu {
 						left: unset;
