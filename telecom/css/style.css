@@ -3173,6 +3173,7 @@ body.ie ._ibg img {
   position: relative;
   height: 100vh;
   max-height: 1080px;
+  min-height: 750px;
 }
 
 .slider-main-slide__bg {
@@ -11456,6 +11457,12 @@ body.ie ._ibg img {
     color: #9b9b9b;
   }
 }
+
+@media (max-height: 425px) {
+  .slider-main-slide {
+    min-height: 720px;
+  }
+}
 @supports (-webkit-appearance:none){
 .select__value:before{background:url("../img/icons/select.webp") center/100% no-repeat}
 .select__options::after{background:url("../img/icons/triangel.webp") 0 0/cover no-repeat}
@@ -11804,6 +11811,14 @@ body.ie ._ibg img {
 }
 
  @media (any-hover: hover){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-height: 425px){
 
 @supports (-webkit-appearance:none){
 

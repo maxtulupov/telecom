@@ -24,6 +24,7 @@
 
 	height: 100vh;
 	max-height: 1080px;
+	min-height: 750px;
 
 	&__bg {
 		position: absolute;
@@ -196,6 +197,9 @@
 	// 	align-items: center;
 	// }
 
+	@media (max-height:425px){
+		min-height: 720px;
+	}
 	@media (max-width:$md0+px){
 		// max-height: 1080px;
 	}
