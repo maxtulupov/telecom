@@ -1140,9 +1140,13 @@
 			display: block;
 		}
 	}
-	.logo-block__link {
-		@media (max-width:$md2+px){
-			display: none;
+	.header__bottom {
+		&>.middle-header__logo {
+			.logo-block__link {
+				@media (max-width:$md2+px){
+					display: none;
+				}
+			}
 		}
 	}
 }

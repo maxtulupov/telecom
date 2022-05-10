@@ -102,15 +102,20 @@
 
 <script>
 //Select click
-const allPromoSelect = document.querySelectorAll('.header-promo__select');
-if (allPromoSelect) {
-	allPromoSelect.forEach(elem => {
-		elem.addEventListener('click', e => {
-			const thisSelect = elem.querySelector('select');
-			const thisSelectContainer = elem.querySelector('.select_header-promo__mobile-select');
+const promoTabsSelect = document.querySelectorAll('.header-promo__select');
+if (promoTabsSelect) {
+	promoTabsSelect.forEach(item => {
+		item.addEventListener('click', e => {
+			const thisSelect = item.querySelector('select');
+			const allOptionsInSelect = thisSelect.querySelectorAll('option');
+			const thisSelectContainer = item.querySelector('.select_header-promo__mobile-select');
 			if (!thisSelectContainer.classList.contains('_active')) {
-				console.log(thisSelect.value);
-				//Тут можно передавать value, то есть то, на что мы нажали и вызывать функцию по смене блоков
+				for (let i = 0; i < allOptionsInSelect.length; i++) {
+					if (allOptionsInSelect[i].selected) {
+						//Тут сейчас показывается атрибут data-id у выбранного option
+						console.log(allOptionsInSelect[i].dataset.id);
+					}
+				}
 			}
 		});
 	});

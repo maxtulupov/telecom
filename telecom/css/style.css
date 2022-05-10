@@ -8630,7 +8630,7 @@ body.ie ._ibg img {
     display: block;
   }
 
-  .header--black .logo-block__link {
+  .header--black .header__bottom > .middle-header__logo .logo-block__link {
     display: none;
   }
 
