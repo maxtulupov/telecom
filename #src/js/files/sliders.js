@@ -30,10 +30,10 @@ function sliders_bild_callback(params) { }
 
 let slider_main = new Swiper('.main-silder__content', {
 	// effect: 'fade',
-	autoplay: {
-		delay: 5000,
-		disableOnInteraction: false,
-	},
+	// autoplay: {
+	// 	delay: 5000,
+	// 	disableOnInteraction: false,
+	// },
 	observer: true,
 	observeParents: true,
 	slidesPerView: 1,
