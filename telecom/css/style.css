@@ -6012,6 +6012,7 @@ body.ie ._ibg img {
 
 .one-news__middle {
   display: inline-block;
+  width: 100%;
 }
 
 .one-news__connect-btn {
