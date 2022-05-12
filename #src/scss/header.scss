@@ -67,16 +67,14 @@
 	&._header-hide._header-show {
 		overflow: visible;
 	}
-	&.header--black {
-		@media (max-width:$md2+px){
-			background-color: #fff;
-		}
-	}
 	@media (max-width:$md0+px){
 		height: 185px;
 	}
 	@media (max-width:$md2+px){
 		height: 93px;
+	}
+	@media (max-width:$md2+px){
+		height: 78px;
 	}
 }
 .top-header {
@@ -85,12 +83,13 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	gap: 10px;
 	 
 	&__menu {
 	}
 
 	&__social {
-		flex: 0 1 23.4%;
+		flex: 0 1 26.6%;
 		@media (max-width:$md0+px){
 			flex: 0 1 18%;
 		}
@@ -1121,38 +1120,11 @@
 //====================================================================================================
 .header--black {
 	background-color: #212427;
-	@media (max-width:$md2+px){
-		background-color: #fff;
-	}
 	.icon-menu {
-		span {
-			@media (max-width:$md2+px){
-				background-color: #000;
-			}
-		}
-		&::before {
-			@media (max-width: $md2+px){
-				color: #000;
-			}
-		}
 		&._active {
 			span {
 				@media (max-width:$md2+px){
 					background-color: #fff;
-				}
-			}
-		}
-	}
-	.logo-block__link_black {
-		@media (max-width:$md2+px){
-			display: block;
-		}
-	}
-	.header__bottom {
-		&>.middle-header__logo {
-			.logo-block__link {
-				@media (max-width:$md2+px){
-					display: none;
 				}
 			}
 		}

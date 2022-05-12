@@ -1855,12 +1855,13 @@ body.ie ._ibg img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 10px;
 }
 
 .top-header__social {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 23.4%;
-          flex: 0 1 23.4%;
+      -ms-flex: 0 1 26.6%;
+          flex: 0 1 26.6%;
 }
 
 .menu-top-header__list {
@@ -8618,12 +8619,12 @@ body.ie ._ibg img {
     display: none;
   }
 
-  .header.header--black {
-    background-color: #fff;
+  .header {
+    height: 93px;
   }
 
   .header {
-    height: 93px;
+    height: 78px;
   }
 
   .bottom-header__menu {
@@ -8641,28 +8642,8 @@ body.ie ._ibg img {
     content: "Открыть меню";
   }
 
-  .header--black {
-    background-color: #fff;
-  }
-
-  .header--black .icon-menu span {
-    background-color: #000;
-  }
-
-  .header--black .icon-menu::before {
-    color: #000;
-  }
-
   .header--black .icon-menu._active span {
     background-color: #fff;
-  }
-
-  .header--black .logo-block__link_black {
-    display: block;
-  }
-
-  .header--black .header__bottom > .middle-header__logo .logo-block__link {
-    display: none;
   }
 
   .footer__middle {
