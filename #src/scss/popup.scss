@@ -721,12 +721,16 @@
 }
 //====================================================================================================
 .popup_tv {
+	
 	// .popup__body
 	.popup__body {
 		max-width: 1000px;
 	}
 	// .popup__close
 	.popup__close {
+		@media (max-height:759px) and (max-width:$md4+px) {
+			top: -50px;
+		}
 	}
 	// .popup__title
 	.popup__title {
@@ -734,6 +738,9 @@
 	// .popup__tv-content
 	.popup__tv-content {
 		margin: 50px 0px 0px 0px;
+	}
+	@media (max-height:650px) and (max-width:$md4+px) {
+		padding: 50px 10px 30px 10px;
 	}
 }
 .content-tv {
