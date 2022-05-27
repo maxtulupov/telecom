@@ -64,6 +64,10 @@
 	}
 
 	&__entry-content {
+		font-weight: 500;
+		font-size: 16px; //18
+		line-height: 1.2;
+		color: rgb(25, 25, 25);
 		h4 {
 			font-weight: bold;
 			font-size: 24px;
@@ -71,17 +75,17 @@
 			margin: 0px 0px 25px 0px;
 			@media (max-width:$md4+px){
 				font-size: 20px;
+				margin: 0px 0px 20px 0px;
 			}
 		}
 		p {
-			font-weight: 500;
-			font-size: 20px;
-			line-height: 1.2;
-			color: rgb(25, 25, 25);
 			margin: 0px 0px 25px 0px;
 			@media (max-width:$md4+px){
-				font-size: 16px;
+				margin: 0px 0px 20px 0px;
 			}
+		}
+		@media (max-width:$md4+px){
+			font-size: 16px;
 		}
 	}
 
