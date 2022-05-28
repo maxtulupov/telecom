@@ -846,8 +846,57 @@
 				</section>
 				<section class="contacts">
 					<div class="contacts__bottom">
-						<div class="contacts__map">
-							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9d02a87df79acab07b04c9af198d5fde71443b79515111490d4cee9c53765e40&amp;width=100%25&amp;height=570&amp;lang=ru_RU&amp;scroll=true"></script>
+						<div id="map" class="contacts__map">
+							<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+							<script>
+							ymaps.ready(init);
+						
+							function init () {
+								 var myMap = new ymaps.Map("map", {
+									  // Координаты центра карты
+									  center:[55.427662,37.558987],
+									  // Масштаб карты
+									  zoom: 16,
+									  // Выключаем все управление картой
+									  controls: ['zoomControl','typeSelector',  'fullscreenControl', 'routeButtonControl']
+								 }); 
+											
+								 var myGeoObjects = [];
+								 /* Шаблон иконки */
+								var myIcon = ymaps.templateLayoutFactory.createClass('<div class="my_icon">' + 
+												'{{ properties.iconCaption }}' + 
+								'</div>');
+								/* Шаблон иконки */
+								var myIcon = ymaps.templateLayoutFactory.createClass('<div class="my_icon"><div class="my_icon__text">' + 
+												'{{ properties.iconCaption }}' + 
+								'</div></div>');
+
+								 // Указываем координаты метки
+								 myGeoObjects = new ymaps.Placemark([55.427662,37.558987],{
+													  balloonContent: 'Интернет-провайдер \"Кварц Телеком\"',
+													  iconCaption: 'Интернет-провайдер \"Кварц Телеком\"'
+													  },{
+													  iconLayout: myIcon,
+													  // Путь до нашей картинки
+													  iconImageHref: 'img/logo-mini.png', 
+													  // Размеры иконки
+													  iconImageSize: [49, 49],
+													  // Смещение верхнего угла относительно основания иконки
+													  iconImageOffset: [-35, -35]
+								 });
+												 
+								 var clusterer = new ymaps.Clusterer({
+									  clusterDisableClickZoom: false,
+									  clusterOpenBalloonOnClick: false,
+								 });
+								 
+								 clusterer.add(myGeoObjects);
+								 myMap.geoObjects.add(clusterer);
+								 // Отключим zoom
+								 myMap.behaviors.disable('scrollZoom');
+						
+							}
+							</script>
 						</div>
 					</div>
 				</section>

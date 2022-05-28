@@ -41,6 +41,14 @@
 			transition: all 0.3s ease 0.2s;
 			transform: scale(1);
 		}
+
+		&._ajax {
+			.popup__body {
+				&::after {
+					opacity: 1;
+				}
+			}
+		}
 	}
 	// .popup__content
 	&__content {
@@ -64,6 +72,19 @@
 		max-width: 510px;
 		border-radius: 10px;
 		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			border-radius: 10px;
+			background: url('../img/icons/loading.gif') center center no-repeat #fff;
+			opacity: 0;
+			transition: opacity 0.3s ease 0s;
+			pointer-events: none;
+		}
 		@media (max-width:$md4+px){
 			padding: 20px 15px;
 		}
